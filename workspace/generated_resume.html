@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Ayo Ajayi | Resume</title>
+  <style>
+    :root {
+      --primary-color: #2c3e50;
+      --accent-color: #e74c3c;
+      --light-color: #ecf0f1;
+      --background-color: #ffffff;
+      --text-color: #34495e;
+    }
+    * {
+      box-sizing: border-box;
+    }
+    body {
+      margin: 0;
+      font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+      background-color: var(--light-color);
+      color: var(--text-color);
+      line-height: 1.6;
+    }
+    .container {
+      max-width: 1000px;
+      margin: 30px auto;
+      background: var(--background-color);
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+    header {
+      text-align: center;
+      padding: 20px;
+      border-bottom: 2px solid var(--primary-color);
+    }
+    header h1 {
+      margin: 0;
+      font-size: 2.5em;
+      color: var(--primary-color);
+    }
+    header p {
+      margin: 5px 0 0;
+      font-size: 1.2em;
+      color: var(--accent-color);
+    }
+    .content {
+      display: grid;
+      grid-template-columns: 1fr;
+    }
+    @media (min-width: 768px) {
+      .content {
+        grid-template-columns: 1fr 2fr;
+      }
+    }
+    .sidebar {
+      background: var(--primary-color);
+      color: var(--background-color);
+      padding: 20px;
+    }
+    .sidebar h2 {
+      font-size: 1.5em;
+      margin-bottom: 10px;
+      border-bottom: 2px solid var(--accent-color);
+      padding-bottom: 5px;
+    }
+    .sidebar ul {
+      list-style: none;
+      padding: 0;
+    }
+    .sidebar li {
+      margin-bottom: 10px;
+      font-size: 0.95em;
+    }
+    .sidebar a {
+      color: var(--background-color);
+      text-decoration: none;
+    }
+    .skills ul {
+      display: flex;
+      flex-wrap: wrap;
+      list-style: none;
+      padding: 0;
+    }
+    .skills li {
+      background: var(--accent-color);
+      color: var(--background-color);
+      padding: 5px 10px;
+      border-radius: 20px;
+      margin: 5px 5px 5px 0;
+      font-size: 0.9em;
+    }
+    .main {
+      padding: 20px;
+    }
+    .section {
+      margin-bottom: 20px;
+    }
+    .section h2 {
+      font-size: 1.8em;
+      border-bottom: 2px solid var(--accent-color);
+      padding-bottom: 5px;
+      margin-bottom: 10px;
+      color: var(--primary-color);
+    }
+    .section h3 {
+      margin: 0;
+      font-size: 1.2em;
+      color: var(--primary-color);
+    }
+    .section span {
+      display: block;
+      font-size: 0.9em;
+      color: var(--accent-color);
+      margin-bottom: 5px;
+    }
+    .section p {
+      margin: 5px 0;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>Ayo Ajayi</h1>
+      <p>Junior Software Engineer</p>
+    </header>
+    <div class="content">
+      <aside class="sidebar">
+        <h2>Contact</h2>
+        <ul>
+          <li>Email: <a href="mailto:ayo2@example.com">ayo2@example.com</a></li>
+          <li>Phone: (667) 556-9909</li>
+          <li>Location: 55 James Lane, City, State, ZIP</li>
+          <li>LinkedIn: <a href="https://linkedin.com/in/ayoajayi" target="_blank">linkedin.com/in/ayoajayi</a></li>
+          <li>GitHub: <a href="https://github.com/ayoajayi" target="_blank">github.com/ayoajayi</a></li>
+        </ul>
+        <h2>Skills</h2>
+        <div class="skills">
+          <ul>
+            <li>Java</li>
+            <li>Python</li>
+            <li>React</li>
+            <li>CSS</li>
+            <li>HTML</li>
+            <li>JavaScript</li>
+            <li>Git & GitHub</li>
+            <li>SQL</li>
+          </ul>
+        </div>
+      </aside>
+      <main class="main">
+        <section class="section">
+          <h2>Professional Summary</h2>
+          <p>
+            Dynamic and passionate Junior Software Engineer with experience in developing innovative solutions for diverse and challenging environments. Proven ability to leverage full-stack development expertise to create robust web applications. Adept at collaborating with cross-functional teams to deliver projects on time and within budget. Enthusiastic about learning new technologies and continuously advancing technical skills.
+          </p>
+        </section>
+        <section class="section">
+          <h2>Experience</h2>
+          <div class="experience-item">
+            <h3>Software Engineer Intern at TD Bank</h3>
+            <span>June 2022 - Present | City, State</span>
+            <p>
+              Collaborate with the development team to create and deploy applications that improve customer experience. Assist in designing scalable software solutions and participate in code reviews to maintain code quality. Enhance functionalities of existing systems and work on integrating new features to meet business requirements.
+            </p>
+            <ul>
+              <li>Developed and maintained customer-facing mobile banking applications using React Native.</li>
+              <li>Implemented automation scripts to streamline backend processes, reducing run time by 30%.</li>
+              <li>Conducted user testing sessions and gathered feedback to refine application features.</li>
+            </ul>
+          </div>
+          <div class="experience-item">
+            <h3>Participant at Onsidi Bootcamp</h3>
+            <span>January 2022 - May 2022 | City, State</span>
+            <p>
+              Completed an intensive, full-stack development bootcamp with a focus on project-based learning and real-world application of skills. Gained hands-on experience in developing end-to-end applications from design to deployment.
+            </p>
+            <ul>
+              <li>Built a fully functional e-commerce website using MERN stack.</li>
+              <li>Worked in teams to develop applications using Agile methodologies.</li>
+              <li>Integrated third-party APIs to enhance application capabilities.</li>
+            </ul>
+          </div>
+        </section>
+        <section class="section">
+          <h2>Education</h2>
+          <div class="education-item">
+            <h3>Bachelor of Science in Computer Science</h3>
+            <span>University of Example | September 2018 - May 2022 | City, State</span>
+            <p>
+              Relevant Coursework: Data Structures and Algorithms, Web Development, Database Systems, Object-Oriented Programming, Software Engineering Principles.
+            </p>
+            <ul>
+              <li>Graduated with Honors, GPA: 3.8/4.0</li>
+              <li>Member of the Computer Science Club and Coding Bootcamp Team Lead.</li>
+              <li>Completed senior project developing a machine learning algorithm to predict stock market trends.</li>
+            </ul>
+          </div>
+        </section>
+      </main>
+    </div>
+  </div>
+</body>
+</html>
